@@ -3,8 +3,8 @@ class sb_comparator extends uvm_component;
 
   uvm_analysis_export#(my_transaction)axp_in;
   uvm_analysis_export#(my_transaction)axp_out;
-  uvm_analysis_fifo#(my_transaction)expfifo;
-  uvm_analysis_fifo#(my_transaction)outfifo;
+  uvm_tlm_analysis_fifo#(my_transaction)expfifo;
+  uvm_tlm_analysis_fifo#(my_transaction)outfifo;
 
   function new(string name,uvm_component parent);
     super.new(name,parent);

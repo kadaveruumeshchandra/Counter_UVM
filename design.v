@@ -2,14 +2,14 @@
 module counter(
   input clk,
   input reset,
-  output reg [2:0]a
+  output reg [2:0]count
 );
   always@(posedge clk) begin
     if(reset) begin
-      a<=0;
+      count<=0;
     end
     else begin
-      a<=a+1;
+      count<=count+1;
     end
   end
 endmodule
